@@ -6,6 +6,83 @@ Secondary Color (Light Blue): 83ADC0;
 Highlight Color (Green): 5F837E;
 Active Color (Orange): C07665;
 */
+header {
+  background-color: #DCDCDC;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  position: fixed;
+box-shadow:         0px 2px 4px 0px rgba(50, 50, 50, 0.75);
+width:100%;
+}
+
+selector {
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+.logo {
+  max-width: 250px;
+}
+main {
+  padding-top: 133px;
+}
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav>ul>li>a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+nav>ul>li>a:active {
+  opacity: 0.7;
+}
+
+
+#hero {
+  background-color: #DCDCDC;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
 body {
   background-color: #F3F3F3;
   font-family: 'Roboto', sans-serif;
@@ -49,19 +126,19 @@ a {
 
 a:hover,
 a:focus {
-  color: #5F837E;
+  color: #62BBDD;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
 a:visited {
   /* visited link */
-  color: #5F837E;
+  color: #DD8F62;
 }
 
 a:active {
   /* selected link */
-  color: #C07665;
+  color: #62BBDD;
 }
 
 .button {
