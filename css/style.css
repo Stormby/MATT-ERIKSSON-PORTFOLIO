@@ -6,14 +6,11 @@ Button Color (Yellow): #F4B942;
 Link Colour (Blue): 4059AD;
 Secondary Color (Teal): 62BBDD;
 */
-
 * {
   box-sizing: border-box;
 }
 
-
 /* Fonts & Headings */
-
 body {
   background-color: #EFF2F1;
   font-family: 'Roboto', sans-serif;
@@ -53,10 +50,7 @@ h4 {
   text-align: center;
 }
 
-
-
 /* Buttons & Links */
-
 a {
   color: #4059AD;
   text-decoration: none;
@@ -79,8 +73,6 @@ a:active {
   /* selected link */
   color: #62BBDD;
 }
-
-
 
 .button {
   display: inline-block;
@@ -118,10 +110,7 @@ a:active {
   color: #ffffff !important;
 }
 
-
-
 /* Layout styling */
-
 header {
   background-color: #EFF2F1;
   padding: 10px;
@@ -139,7 +128,6 @@ header {
 .row {
   margin: 25px 0;
 }
-
 
 .logo {
   max-width: 250px;
@@ -211,10 +199,7 @@ footer {
   opacity: 0.7;
 }
 
-
-
 /* index.html */
-
 #hero {
   background-color: #6B9AC4;
   padding: 20px 0;
@@ -227,6 +212,7 @@ footer {
 }
 
 #hero p {
+  text-align: center;
   color: #FFFFFF;
 }
 
