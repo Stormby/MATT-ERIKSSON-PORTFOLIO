@@ -1,91 +1,21 @@
 /*
 Colors used:
-Primary Color (White): #F3F3F3;
-Text Color (Dark Grey): #595A5A;
-Secondary Color (Light Blue): 83ADC0;
-Highlight Color (Green): 5F837E;
-Active Color (Orange): C07665;
+Background Color (Light Grey): #EFF2F1;
+Hero Background: (Light Blue): #6B9AC4;
+Button Color (Yellow): #F4B942;
+Link Colour (Blue): 4059AD;
+Secondary Color (Teal): 62BBDD;
 */
-header {
-  background-color: #DCDCDC;
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  position: fixed;
-  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.75);
-  width: 100%;
-}
-
-selector {
-  position: relative;
-}
 
 * {
   box-sizing: border-box;
 }
 
-/* Layout styling */
-.container {
-  padding: 0 15px;
-}
 
-.row {
-  margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
-}
-
-#work .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #4a4a4a;
-}
-
-#hero h1 {
-  text-align: center;
-  /* Centers text */
-}
-
-.logo {
-  max-width: 250px;
-}
-
-main {
-  padding-top: 133px;
-}
-
-nav>ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
-}
-
-nav>ul>li>a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-}
-
-nav>ul>li>a:hover {
-  opacity: 0.7;
-  text-decoration: underline;
-}
-
-nav>ul>li>a:active {
-  opacity: 0.7;
-}
-
-#hero {
-  background-color: #DCDCDC;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
+/* Fonts & Headings */
 
 body {
-  background-color: #F3F3F3;
+  background-color: #EFF2F1;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -94,39 +24,6 @@ body {
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #595A5A;
-}
-
-footer {
-  background-color: #F3F3F3;
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  width: 100%;
-}
-
-social>ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-social>ul>li {
-  display: inline-block;
-}
-
-social>ul>li>a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-}
-
-social>ul>li>a:hover {
-  opacity: 0.7;
-  text-decoration: underline;
-}
-
-social>ul>li>a:active {
-  opacity: 0.7;
 }
 
 h1, h2, h3 {
@@ -156,14 +53,19 @@ h4 {
   text-align: center;
 }
 
-img {
-  width: 100%;
-}
+
+
+/* Buttons & Links */
 
 a {
-  color: #83ADC0;
+  color: #4059AD;
   text-decoration: none;
   /* No underlining */
+}
+
+a:visited {
+  /* visited link */
+  color: #4059AD;
 }
 
 a:hover,
@@ -173,20 +75,17 @@ a:focus {
   /* Underlining when hovering over a link */
 }
 
-a:visited {
-  /* visited link */
-  color: #DD8F62;
-}
-
 a:active {
   /* selected link */
   color: #62BBDD;
 }
 
+
+
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #83ADC0;
+  background-color: #F4B942;
   color: #ffffff !important;
   /* needed to override the default link color */
   font-weight: 400;
@@ -209,17 +108,129 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #83ADC0 !important;
+  color: #F4B942 !important;
   text-transform: uppercase;
-  border: 2px solid #83ADC0;
+  border: 2px solid #F4B942;
 }
 
 .button.contact:hover {
-  background-color: #83ADC0;
+  background-color: #F4B942;
   color: #ffffff !important;
 }
 
-.button.contact:hover {
-  background-color: #5F837E;
-  color: #ffffff !important;
+
+
+/* Layout styling */
+
+header {
+  background-color: #EFF2F1;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  position: fixed;
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.75);
+  width: 100%;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+
+.logo {
+  max-width: 250px;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #595A5A;
+}
+
+nav>ul>li>a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+nav>ul>li>a:active {
+  opacity: 0.7;
+}
+
+footer {
+  background-color: #F3F3F3;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.social>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social>ul>li {
+  display: inline-block;
+}
+
+.social>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #595A5A;
+}
+
+.social>ul>li>a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.social>ul>li>a:active {
+  opacity: 0.7;
+}
+
+
+
+/* index.html */
+
+#hero {
+  background-color: #6B9AC4;
+  padding: 20px 0;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#hero p {
+  color: #FFFFFF;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #595A5A;
 }
