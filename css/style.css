@@ -3,7 +3,7 @@ Colors used:
 Background Color (Light Grey): #EFF2F1;
 Hero Background: (Light Blue): #6B9AC4;
 Button Color (Yellow): #F4B942;
-Link Colour (Blue): 4059AD;
+Link Colour (Blue): #4059AD;
 Secondary Color (Teal): 62BBDD;
 */
 * {
@@ -83,8 +83,9 @@ a:active {
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #5F837E;
-  /* width of the border, type, color */
+    /* width of the border, type, color */
+  border-bottom: 2px solid #DB9714;
+  /* button animation */
   transition: 0.2s opacity;
 }
 
@@ -113,7 +114,7 @@ a:active {
 /* Layout styling */
 header {
   background-color: #EFF2F1;
-  padding: 10px;
+  padding: 10px 0px 0px 0px;
   margin: auto;
   text-align: center;
   position: fixed;
@@ -129,6 +130,12 @@ header {
   margin: 25px 0;
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .logo {
   max-width: 250px;
 }
@@ -138,7 +145,7 @@ img {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 100px;
 }
 
 nav>ul {
@@ -153,17 +160,17 @@ nav>ul>li {
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   color: #595A5A;
+  width: 100%
 }
 
 nav>ul>li>a:hover {
   opacity: 0.7;
-  text-decoration: underline;
 }
 
 nav>ul>li>a:active {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 footer {
@@ -211,7 +218,10 @@ footer {
   color: #FFFFFF;
 }
 
-#hero p {
+#hero h1 p {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
   text-align: center;
   color: #FFFFFF;
 }
@@ -219,4 +229,210 @@ footer {
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #595A5A;
+}
+
+/* About Page */
+#about-page h3 {
+  margin-top: 0;
+}
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  .col-md-6 {
+    width: 50%;
+  }
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+
+  }
+
+  main {
+    padding-top: 90px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #hero span {
+    display: block;
+  }
+}
+
+/* SVG Animation */
+@keyframes color-change-purple{
+  from {fill: #686AF6;}
+  to {fill: #FFFFFF;}
+}
+
+@keyframes color-change-gray{
+  from {fill: #3E3E54;}
+  to {fill: #FFFFFF;}
+}
+
+@keyframes arm{
+  from {fill: #F5BBBA;}
+  to {fill: #F5BBBA;}
+  from {transform: translate(0);}
+  to {transform: translate(5px);}
+}
+.p1{
+  animation-duration: 0.25s;
+  animation-name: color-change-purple;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.g2{
+  animation-duration: 0.2s;
+  animation-name: color-change-gray;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.p2{
+  animation-duration: 0.25s;
+  animation-name: color-change-purple;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.g3{
+  animation-duration: 0.3s;
+  animation-name: color-change-gray;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.p3{
+  animation-duration: 0.28s;
+  animation-name: color-change-purple;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.g4{
+  animation-duration: 0.27s;
+  animation-name: color-change-gray;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.g5{
+  animation-duration: 0.32s;
+  animation-name: color-change-gray;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.g6{
+  animation-duration: 0.21s;
+  animation-name: color-change-gray;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.arm {
+  animation-duration: 1s;
+  animation-name: arm;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.snip1217 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1217 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0;
+}
+.snip1217 a {
+  padding: 0.3em 0;
+  color: #4059AD;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.snip1217 a:before,
+.snip1217 a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #4059AD;
+  width: 0;
+}
+.snip1217 a:before {
+  top: 0;
+  left: 0;
+}
+.snip1217 a:after {
+  bottom: 0;
+  right: 0;
+}
+.snip1217 a:hover,
+.snip1217 .current a {
+  color: ##4059AD;
+}
+.snip1217 a:hover:before,
+.snip1217 .current a:before,
+.snip1217 a:hover:after,
+.snip1217 .current a:after {
+  width: 100%;
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
+
+[class*="col-"] {
+  float: left;
+  padding: 0px 10px 0px 10px;
 }
