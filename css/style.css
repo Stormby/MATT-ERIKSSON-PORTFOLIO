@@ -148,7 +148,7 @@ img {
 }
 
 main {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 nav>ul {
@@ -424,7 +424,11 @@ Large devices (1024px or larger)
     }
 
     #about {
-      padding: 30px 100px;
+      padding: 60px 100px;
+    }
+
+    #skills {
+      border: 1px solid #595A5A
     }
 
     .container {
