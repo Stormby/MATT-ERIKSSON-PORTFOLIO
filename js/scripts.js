@@ -6,4 +6,4 @@ var test = 'This will not actually create a variable';
 */
  //Everything after the slashes has no effect
 
- console.log("Hello world")
+ console.log("Hello world");
