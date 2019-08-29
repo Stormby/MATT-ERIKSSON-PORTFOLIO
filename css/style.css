@@ -140,7 +140,7 @@ header {
 
 .logo {
   max-width: 250px;
-  padding-top: 7px
+  padding-top: 7px;
 }
 
 img {
@@ -372,6 +372,9 @@ footer {
   animation-timing-function: linear;
 }
 
+svg {
+width: 100%;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -418,13 +421,17 @@ Large devices (1024px or larger)
     .col-lg-7 {
       width: 60%;
     }
-
+  }
     .col-lg-5 {
       width: 40%;
     }
 
     #about {
       padding: 60px 100px;
+    }
+
+    #leveledge {
+      padding: 50px;
     }
 
     #skills {
@@ -491,7 +498,7 @@ Large devices (1024px or larger)
     .snip1217 .current a:after {
       width: 100%;
     }
-  }
+
 
   /* ==============================
 X-large devices (1440px or larger)
