@@ -80,14 +80,14 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #F4B942;
+  background-color: #5166AD;
   color: #ffffff !important;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   /* width of the border, type, color */
-  border-bottom: 2px solid #DB9714;
+  border-bottom: 2px solid #31468F;
   /* button animation */
   transition: 0.2s opacity;
 }
@@ -104,13 +104,13 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #F4B942 !important;
+  color: #5166AD !important;
   text-transform: uppercase;
-  border: 2px solid #F4B942;
+  border: 2px solid #5166AD;
 }
 
 .button.contact:hover {
-  background-color: #F4B942;
+  background-color: #263770;
   color: #ffffff !important;
 }
 
@@ -169,7 +169,7 @@ nav>ul>li>a {
   text-decoration: none;
   font-weight: 400;
   color: #595A5A;
-  width: 100%
+
 }
 
 nav>ul>li>a:hover {
@@ -186,6 +186,7 @@ nav>ul>li>a:active {
 
 .navtoggle, .navtoggle.responsive {
   position: relative;
+
 }
 
 .navtoggle li .icon {
@@ -194,6 +195,7 @@ nav>ul>li>a:active {
   top: 2px;
   font-size: 20px;
 padding-right: 0;
+  color: #4059AD;
 }
 
 .navtoggle.responsive li  {
@@ -415,8 +417,10 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   .col-md-6 {
-    width: 50%;
+    width: 60%;
   }
+
+
 
   header {
     text-align: unset;
@@ -425,7 +429,7 @@ Medium devices (640px and larger)
 
   .logo {
     max-width: 250px;
-    padding-top: 38px;
+    padding-top: 40px;
   }
 
 
