@@ -6,4 +6,14 @@ var test = 'This will not actually create a variable';
 */
  //Everything after the slashes has no effect
 
- console.log("Hello world");
+ console.log("Welcome to my site!");
+
+
+ function menuToggle() {
+   var x = document.getElementById('myNavtoggle');
+   if (x.className === 'navtoggle') {
+     x.className += ' responsive';
+   } else {
+     x.className = 'navtoggle';
+   }
+ }
