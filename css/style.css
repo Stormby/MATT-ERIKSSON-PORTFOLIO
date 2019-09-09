@@ -141,7 +141,7 @@ header {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 80px;
   padding-top: 7px;
 }
 
@@ -211,7 +211,7 @@ padding-right: 0;
 }
 
 .navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
+  padding: 0;
 }
 
 footer {
@@ -416,34 +416,35 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   .col-md-6 {
-    width: 60%;
+    width: 50%;
   }
 
 
 
   header {
     text-align: unset;
-    padding: 20px 0 16px;
+    padding: 16px 0 16px;
   }
 
   .logo {
-    max-width: 250px;
-    padding-top: 24px;
+    max-width: 120px;
+    padding-top: 13px;
   }
 
 
   nav {
     width: auto;
     float: right;
-    padding-top: .8em;
+    margin-top: 4px;
   }
 
   nav > ul {
     margin: 1em 0;
   }
 
-  nav>ul>li {
-    display: inline-block;
+  .navtoggle.responsive li  {
+   padding: 0;
+   border-top: none;
   }
 
   .navtoggle li:not(:last-child) {
@@ -455,7 +456,7 @@ Medium devices (640px and larger)
 }
 
   main {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 
   body {
@@ -482,7 +483,7 @@ Large devices (1024px or larger)
     .col-lg-7 {
       width: 60%;
     }
-  }
+
     .col-lg-5 {
       width: 40%;
     }
@@ -505,7 +506,7 @@ Large devices (1024px or larger)
       margin-right: auto;
     }
 
-
+  }
 
 
   /* ==============================
