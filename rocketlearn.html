@@ -22,7 +22,7 @@
         <nav>
           <ul>
             <li class="current"><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">About Me</a></li>
             <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
@@ -34,69 +34,104 @@
   <main>
     <div class="container">
       <div id="leveledge">
-        <h1 class="center">RocketLearn</h1>
-        <div>
+        <h1 class="center">Rocket Learn</h1>
+        <div class="center">
           <picture>
             <source srcset="img/rocketlearn/rocketlearn-600px.png" media="(max-width:767px)">
-            <img src="img/rocketlearn/rocketlearn-1200px.png" alt="RocketLearn Mockup">
+            <img class="myImages" id="myImg" src="img/rocketlearn/rocketlearn-1200px.png" alt="RocketLearn Mockup" style="max-width: 800px">
+
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+
           </picture>
         </div>
         <div>
-          <p>RocketLearn is an app which allows users to study vocabulary in an authentic, engaging and entertaining way while retaining control of the experience.</p>
+          <p>Rocket Learn is an app which allows users to study vocabulary in an authentic, engaging and entertaining way while retaining control of the experience.</p>
         </div>
-        <div>
-          <h2 class="center">My Process</h2>
-          <div>
-            <div>
+
+
+        <div class="container">
+          <h3 class="center">Research</h3>
+          <div class="row">
+            <div class="col-md-6 col-lg-7">
+
               <picture>
                 <source srcset="img/rocketlearn/rocketresearch-600px.png" media="(max-width:767px)">
-                <img src="img/rocketlearn/rocketresearch-1200px.png" alt="RocketLearn Research">
+                <img class="myImages" id="myImg" src="img/rocketlearn/rocketresearch-1200px.png" alt="Rocket Learn Research">
+
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img01">
+                  <div id="caption"></div>
+                </div>
               </picture>
+
             </div>
-            <h3 class="center">Research</h3>
-            <p>I started the process by conducting <i>user research</i> with users of similar apps and services. Through this I discovered that users:</p>
+
+            <div class="col-md-6 col-lg-5">
+              <p>I started the process by conducting <i>user research</i> with users of similar apps and services. Through this I discovered that users wanted a time efficient way to study and by making the experience engaginga and entertaining I
+                would be likely retain the users for longer. Participanyts also expressed an interest in being able to personalise the app and incentives to keep studying.</p>
+            </div>
+          </div>
+
+
+          <div>
+      <div class="container">
+              <h3 class="center">Ideation</h3>
+
+              <div class="row">
+                <div class="col-md-6 col-lg-7">
+                  <picture>
+                    <source srcset="img/rocketlearn/rocketframes-600px.png" media="(max-width:767px)">
+                    <img class="myImages" id="myImg" src="img/rocketlearn/rocketframes-1200px.png" alt="Wireframes Personas">
+
+                    <div id="myModal" class="modal">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="img01">
+                      <div id="caption"></div>
+                    </div>
+                  </picture>
+                </div>
+                <p>Based on my research I created a <i>protopersona</i> to ensure that I kept focus on the user throughout the process. This also helped me develop the problem statement which I ultimately wanted Rocketlearn to solve. Through
+                  <i>task
+                    analysis</i> and <i>user flows</i> I developed a structure for the app which I would deliver an efficient and user-friendly experience.</p>
+              </div>
+            </div>
 
             <div>
-              <ul>
-                <li>Want a time efficient way to study - preferably in small, bite sized sessions</li>
-                <li>Would be more likely to return to the app if the experience was fun and rewarding</li>
-                <li>Want to be able to personalise their learning experience</li>
-                <li>Want to be held accountable without feeling pressured</li>
-              </ul>
+              <div class="container">
+                <h3 class="center padding10">Wireframing & Testing</h3>
 
+
+                <picture>
+                  <source srcset="img/rocketlearn/rocketchanges-600px.png" media="(max-width:767px)">
+                  <img class="myImages" id="myImg" src="img/rocketlearn/rocketchanges-1200px.png" alt="Revised Wireframe">
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                  </div>
+                </picture>
+              </div>
+
+              <p>I created a series of <i>low-fidelity wireframes</i> which I used to build a functioning prototype in Prott. I then recruited 5 participants to take part in in-person user tests of the app. The issues and how I decided to
+                resolve them
+                were as follows:</p>
+              <div>
+                <ul>
+                  <li>Added a ‘HELP’ button to menu in order to access support at all times</li>
+                  <li>The user wasn’t able to confirm when setting the time for a challenge so a button for this was added</li>
+                  <li>Some users were frustrated about being able to use the app right away so an option to skip onboarding was included</li>
+                  <li>Naming of some elements caused some confusion and was therefore clarified in the next iteration</li>
+                </ul>
+              </div>
             </div>
-
-          </div>
-          <div>
-            <div>
-              <picture>
-                <source srcset="img/rocketlearn/rocketframes-600px.png" media="(max-width:767px)">
-                <img src="img/rocketlearn/rocketframes-1200px.png" alt="Wireframes Personas">
-              </picture>
-            </div>
-            <h3 class="center">Ideation</h3>
-            <p>Based on my research I created a <i>protopersona</i> to ensure that I kept focus on the user throughout the process. This also helped me develop the problem statement which I ultimately wanted Rocketlearn to solve. Through <i>task
-                analysis</i> and <i>user flows</i> I developed a structure for the app which I would deliver an efficient and user-friendly experience.</p>
-          </div>
-          <div>
-            <picture>
-              <source srcset="img/rocketlearn/rocketchanges-600px.png" media="(max-width:767px)">
-              <img src="img/rocketlearn/rocketchanges-1200px.png" alt="Revised Wireframe">
-            </picture>
-          </div>
-          <h3 class="center">Wireframing & Testing</h3>
-          <p>I created a series of <i>low-fidelity wireframes</i> which I used to build a functioning prototype in Prott. I then recruited 5 participants to take part in in-person user tests of the app. The issues and how I decided to resolve them
-            were as follows:</p>
-          <div>
-            <ul>
-              <li>Added a ‘HELP’ button to menu in order to access support at all times</li>
-              <li>The user wasn’t able to confirm when setting the time for a challenge so a button for this was added</li>
-              <li>Some users were frustrated about being able to use the app right away so an option to skip onboarding was included</li>
-              <li>Naming of some elements caused some confusion and was therefore clarified in the next iteration</li>
-            </ul>
           </div>
 
-          <p class="center">To explore RocketLearn please follow the link to the prototype below.</p>
+          <p class="center">Explore Rocket Learn here:</p>
           <div class="center">
             <a href="https://prottapp.com/p/2ebb6e#/">Prototype</a>
           </div>
@@ -112,11 +147,16 @@
   </main>
 
   <footer id="contact">
-    <div class="container">
+
+    <div id="box" class="container">
+
       <h2>Get in touch!</h2>
-      <p>Like what you see? Get in touch for a chat about how I can be of help. Mobile: <a href="tel:0+44891326450">+44 7891 326 450</a> or skype me at <a href="mskype:matteriksson_1">matteriksson_1</a></p>
+      <p>Don't hesitate to get in touch if you think I'd be a great candidate for your team.
+        <p> Mobile: <a href="tel:0+44891326450">+44 7891 326 450</a></p>
+        <p> Skype: <a href="mskype:matteriksson_1">matteriksson_1</a></p>
     </div>
     <a href="mailto:matteriksson@gmail.com" class="button contact">Email me</a>
+
     </div>
     <div class="social">
       <ul>

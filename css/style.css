@@ -12,7 +12,7 @@ Secondary Color (Teal): 62BBDD;
 
 /* Fonts & Headings */
 body {
-  background-color: #EFF2F1;
+  background-color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -23,9 +23,12 @@ body {
   color: #595A5A;
 }
 
-
 .center {
   text-align: center;
+}
+
+.padding10 {
+  padding-bottom: 20px;
 }
 
 h1, h2, h3 {
@@ -84,7 +87,7 @@ a:active {
   color: #ffffff !important;
   /* needed to override the default link color */
   font-weight: 400;
-  padding: 10px;
+  padding: 6px 10px;
   border-radius: 3px;
   /* width of the border, type, color */
   border-bottom: 2px solid #31468F;
@@ -114,6 +117,10 @@ a:active {
   color: #ffffff !important;
 }
 
+.wrapper {
+  text-align: center;
+}
+
 /* Layout styling */
 header {
   background-color: #EFF2F1;
@@ -123,8 +130,6 @@ header {
   box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.75);
   width: 100%;
 }
-
-
 
 .container {
   padding: 0 15px;
@@ -149,12 +154,10 @@ img {
   width: 100%;
 }
 
-
 main {
   padding-top: 56px;
+
 }
-
-
 
 nav>ul {
   list-style-type: none;
@@ -162,14 +165,12 @@ nav>ul {
   margin: 0;
 }
 
-
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 400;
-  color: #595A5A;
-
+  color: #9EA5DD;
 }
 
 nav>ul>li>a:hover {
@@ -193,29 +194,29 @@ nav>ul>li>a:active {
   right: 0;
   top: 2px;
   font-size: 20px;
-padding-right: 0;
+  padding-right: 0;
   color: #4059AD;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0;
 }
 
 footer {
-  background-color: #F3F3F3;
+  background-color: #EBEEFF;
   padding: 0px 10px;
   margin: auto;
   text-align: center;
@@ -272,10 +273,15 @@ footer {
   border-bottom: 1px solid #595A5A;
 }
 
+
+
 /* About Page */
 #about-page h3 {
   margin-top: 0;
 }
+
+
+
 
 [class*="col-"] {
   float: left;
@@ -296,6 +302,8 @@ footer {
   font-size: 18px;
   font-weight: 300;
 }
+
+
 
 /* SVG Animation */
 @keyframes color-change-purple {
@@ -409,8 +417,110 @@ footer {
 }
 
 svg {
-width: 100%;
+  width: 100%;
 }
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1200px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -418,8 +528,6 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
-
-
 
   header {
     text-align: unset;
@@ -431,20 +539,19 @@ Medium devices (640px and larger)
     padding-top: 13px;
   }
 
-
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
-  .navtoggle.responsive li  {
-   padding: 0;
-   border-top: none;
+  .navtoggle.responsive li {
+    padding: 0;
+    border-top: none;
   }
 
   .navtoggle li:not(:last-child) {
@@ -452,8 +559,8 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:last-child {
-  display: none;
-}
+    display: none;
+  }
 
   main {
     padding-top: 80px;
@@ -475,6 +582,16 @@ Medium devices (640px and larger)
     padding: 30px 0px 0px;
   }
 
+  /* Style the Image Used to Trigger the Modal */
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #box {
+    padding-top: 2px;
+  }
 
   /* ==============================
 Large devices (1024px or larger)
@@ -492,6 +609,10 @@ Large devices (1024px or larger)
       padding: 60px 100px;
     }
 
+    #background {
+      width: 100%;
+    }
+
     #leveledge {
       padding: 50px;
     }
@@ -505,9 +626,7 @@ Large devices (1024px or larger)
       margin-left: auto;
       margin-right: auto;
     }
-
   }
-
 
   /* ==============================
 X-large devices (1440px or larger)
