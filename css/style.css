@@ -305,6 +305,7 @@ footer {
 
 
 
+
 /* SVG Animation */
 @keyframes color-change-purple {
   from {
@@ -562,6 +563,9 @@ Medium devices (640px and larger)
     display: none;
   }
 
+  .navtoggle.responsive nav {
+ padding: 0;
+ }
   main {
     padding-top: 80px;
   }
@@ -593,6 +597,15 @@ Medium devices (640px and larger)
     padding-top: 2px;
   }
 
+  .para {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .pic1 {
+    width: 650px;
+  margin: 0 auto;
+  }
   /* ==============================
 Large devices (1024px or larger)
 ================================= */
