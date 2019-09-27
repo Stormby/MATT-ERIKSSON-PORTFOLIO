@@ -525,7 +525,7 @@ svg {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-  @media only screen and (min-width: 640px) {
+@media only screen and (min-width: 640px) {
   .col-md-6 {
     width: 50%;
   }
@@ -646,5 +646,6 @@ Large devices (1024px or larger)
   /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-  @media only screen and (min-width: 1440px) {}
-}
+  @media only screen and (min-width: 1440px) {
+
+  }
