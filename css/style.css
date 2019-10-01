@@ -13,7 +13,7 @@ Secondary Color (Teal): 62BBDD;
 /* Fonts & Headings */
 body {
   background-color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
 
   /* Sets the font size to 16px */
@@ -276,9 +276,9 @@ footer {
   display: block;
   font-size: 16px;
   font-weight: 300;
-  text-align: center;
   color: #fff;
 }
+
 
 #work .row {
   padding-bottom: 25px;
@@ -308,121 +308,6 @@ footer {
   display: block;
   font-size: 18px;
   font-weight: 300;
-}
-
-/* SVG Animation */
-@keyframes color-change-purple {
-  from {
-    fill: #686af6;
-  }
-
-  to {
-    fill: #fff;
-  }
-}
-
-@keyframes color-change-gray {
-  from {
-    fill: #3e3e54;
-  }
-
-  to {
-    fill: #fff;
-  }
-}
-
-@keyframes arm {
-  from {
-    fill: #f5bbba;
-  }
-
-  to {
-    fill: #f5bbba;
-  }
-
-  from {
-    transform: translate(0);
-  }
-
-  to {
-    transform: translate(5px);
-  }
-}
-
-.p1 {
-  animation-duration: 0.25s;
-  animation-name: color-change-purple;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.g2 {
-  animation-duration: 0.2s;
-  animation-name: color-change-gray;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.p2 {
-  animation-duration: 0.25s;
-  animation-name: color-change-purple;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.g3 {
-  animation-duration: 0.3s;
-  animation-name: color-change-gray;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.p3 {
-  animation-duration: 0.28s;
-  animation-name: color-change-purple;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.g4 {
-  animation-duration: 0.27s;
-  animation-name: color-change-gray;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.g5 {
-  animation-duration: 0.32s;
-  animation-name: color-change-gray;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.g6 {
-  animation-duration: 0.21s;
-  animation-name: color-change-gray;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-.arm {
-  animation-duration: 1s;
-  animation-name: arm;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-svg {
-  width: 100%;
 }
 
 
@@ -576,11 +461,26 @@ Medium devices (640px and larger)
   }
 
   #hero {
-    padding: 30px 100px;
+    padding: 20px 50px;
+
   }
 
+  #hero h1 {
+      padding-top: 30px;
+  }
+
+  #hero {
+    background-image: url('../img/me/me-work-1200px.jpg');
+      height: 550px; /* You must set a specified height */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+
+
   #work img {
-    padding-top: 3.5em;
+    padding-top: 0em;
   }
 
   #about {
@@ -619,6 +519,32 @@ Large devices (1024px or larger)
     .col-lg-5 {
       width: 40%;
     }
+
+    .col-lg-4 {
+      width: 50%;
+    }
+
+    #hero {
+
+      background-image: url('../img/me/me-work-1200px.jpg');
+
+        height: 550px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+
+    }
+
+    #hero {
+      padding: 20px 50px;
+
+    }
+
+    #hero h1 {
+        padding-top: 30px;
+    }
+
+
 
     #about {
       padding: 60px 100px;
