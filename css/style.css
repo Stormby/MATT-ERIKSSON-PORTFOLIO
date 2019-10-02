@@ -470,7 +470,7 @@ Medium devices (640px and larger)
   }
 
   #hero {
-    background-image: url('../img/me/me-work-1200px.jpg');
+    background-image: url('../img/Me/me-work-1200px.jpg');
       height: 550px; /* You must set a specified height */
       background-position: center; /* Center the image */
       background-repeat: no-repeat; /* Do not repeat the image */
@@ -526,7 +526,7 @@ Large devices (1024px or larger)
 
     #hero {
 
-      background-image: url('../img/me/me-work-1200px.jpg');
+      background-image: url('../img/Me/me-work-1200px.jpg');
 
         height: 550px; /* You must set a specified height */
         background-position: center; /* Center the image */
