@@ -20,8 +20,8 @@
         <a href="index.html"><img class="logo" src="img/Logo/mattlogo.png" alt="Matt Eriksson"></a>
         <nav>
           <ul>
-            <li<a href="index.html">Work</a></li>
-            <li class="current">><a href="blog.html">Blog</a></li>
+            <li><a href="index.html">Work</a></li>
+            <li class="current"><a href="blog.html">Blog</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
@@ -33,8 +33,13 @@
   </header>
 
   <main>
-
-<script src="https://www.powr.io/powr.js?platform=html"></script><div class="powr-microblog" id="3ad70d71_1570290611"></div>
+<br>
+<h1 class="center">My Articles</h1>
+<div class="container">
+<div id="medium-widget"></div>
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@matteriksson","postsPerLine":2,"limit":4,"picture":"small","fields":["description","author","claps","publishAt"],"ratio":"square"}})</script>
+<div>
 
   </main>
 
@@ -56,9 +61,9 @@
     <div class="social">
       <ul>
         <li><a href="https://www.linkedin.com/in/matteriksson">
-            <i class="fab fa-linkedin"></i></a></li>
+            <font size="6"><i class="fab fa-linkedin"></i></font></a></li>
         <li><a target="_blank" href="https://www.instagram.com/stormboundcreative">
-            <i class="fab fa-instagram"></i></a></li>
+            <font size="6"><i class="fab fa-instagram"></i></font></a></li>
       </ul>
     </div>
 
