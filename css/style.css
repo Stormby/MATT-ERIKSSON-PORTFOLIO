@@ -228,9 +228,14 @@ nav>ul>li>a:active {
 footer {
   background-color: #ebeeff;
   padding: 0 10px;
-  margin: auto;
+  margin: 0;
   text-align: center;
   width: 100%;
+}
+
+footer h2 {
+  padding-top: 60px;
+  margin: 0;
 }
 
 .social>ul {
