@@ -64,8 +64,8 @@ h4 {
 
 /* Buttons & Links */
 a {
-  color: #4059ad;
-  text-decoration: underline;
+  color: #447AAB;
+  text-decoration: none;
 
   /* No underlining */
 }
@@ -97,7 +97,7 @@ a:active {
 
   /* needed to override the default link color */
   font-weight: 400;
-  padding: 6px 10px;
+  padding: 0.6em 1.6em;
   border-radius: 3px;
 
   /* width of the border, type, color */
@@ -157,6 +157,11 @@ header {
   display: table;
 }
 
+#work .row.last {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
 .logo {
   max-width: 80px;
   padding-top: 7px;
@@ -174,6 +179,7 @@ nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+
 }
 
 nav > ul > li > a {
@@ -207,24 +213,27 @@ nav > ul > li > a:active {
   top: 2px;
   font-size: 20px;
   padding-right: 0;
-  color: #4059ad;
+  color: #5166ad;
 }
 
 .navtoggle.responsive li {
   display: block;
+  border-bottom: 1px solid #ccc;
+  text-align: right;
 }
 
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+  padding: 8px 0 0;
 }
 
 .navtoggle.responsive li {
   display: block;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 .navtoggle.responsive li:last-child {
   padding: 0;
+border-bottom: none;
 }
 
 footer {
@@ -429,6 +438,7 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
+
   }
 
   nav > ul {
@@ -438,6 +448,7 @@ Medium devices (640px and larger)
   .navtoggle.responsive li {
     padding: 0;
     border-top: none;
+    position: right;
   }
 
   .navtoggle li:not(:last-child) {
@@ -481,6 +492,7 @@ Medium devices (640px and larger)
 
   #work img {
     padding-top: 0em;
+    border: 1px solid #ccc;
   }
 
   #about {
@@ -569,6 +581,10 @@ Large devices (1024px or larger)
     }
   }
 
+.copyright{
+  margin: 0;
+padding: 0.6em;
+}
   /* ==============================
 X-large devices (1440px or larger)
 ================================= */
