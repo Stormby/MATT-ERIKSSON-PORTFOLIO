@@ -33,20 +33,30 @@
   </header>
 
   <main>
-<br>
-<h1 class="center">My Articles</h1>
-<div class="container">
-<div id="medium-widget"></div>
-    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@matteriksson","postsPerLine":2,"limit":4,"picture":"small","fields":["description","author","claps","publishAt"],"ratio":"square"}})</script>
-<div>
+    <br>
+    <h1 class="center">My Articles</h1>
+    <div class="container">
+      <div id="medium-widget"></div>
+      <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+      <script>
+        MediumWidget.Init({
+          renderTo: '#medium-widget',
+          params: {
+            "resource": "https://medium.com/@matteriksson",
+            "postsPerLine": 2,
+            "limit": 4,
+            "picture": "small",
+            "fields": ["description", "author", "claps", "publishAt"],
+            "ratio": "square"
+          }
+        })
+      </script>
+      <div>
 
   </main>
 
   <footer id="contact">
-
     <div id="box" class="container">
-
       <h2>Let's talk!</h2>
       <p>Can I help or do you want to know more?</p>
       <p>E-mail: <a href="mailto:matteriksson@gmail.com">matteriksson@gmail.com</a>
@@ -61,15 +71,17 @@
     <div class="social">
       <ul>
         <li><a href="https://www.linkedin.com/in/matteriksson">
-            <font size="6"><i class="fab fa-linkedin"></i></font></a></li>
+            <font size="6"><i class="fab fa-linkedin"></i></font>
+          </a></li>
         <li><a target="_blank" href="https://www.instagram.com/stormboundcreative">
-            <font size="6"><i class="fab fa-instagram"></i></font></a></li>
+            <font size="6"><i class="fab fa-instagram"></i></font>
+          </a></li>
       </ul>
     </div>
 
 
     <div class=copyright>
-      <p>Copyright: Matt Eriksson 2019</p>
+      <p>This website was designed and coded by Matt Eriksson</p>
     </div>
   </footer>
 

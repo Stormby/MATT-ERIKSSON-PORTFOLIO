@@ -15,13 +15,10 @@ body {
   background-color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-
   /* Sets the font size to 16px */
   font-weight: 300;
-
   /* Sets the font weight to 300 */
   line-height: 1.6;
-
   /* Sets the line-height to 1.6 * the font-size */
   color: #595a5a;
 }
@@ -66,7 +63,6 @@ h4 {
 a {
   color: #447AAB;
   text-decoration: none;
-
   /* No underlining */
 }
 
@@ -79,7 +75,6 @@ a:hover,
 a:focus {
   color: #62bbdd;
   text-decoration: none;
-
   /* Underlining when hovering over a link */
 }
 
@@ -90,26 +85,21 @@ a:active {
 
 .button {
   display: inline-block;
-
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #5166ad;
   color: #fff !important;
-
   /* needed to override the default link color */
   font-weight: 400;
   padding: 0.6em 1.6em;
   border-radius: 3px;
-
   /* width of the border, type, color */
   border-bottom: 2px solid #31468f;
-
   /* button animation */
   transition: 0.2s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
-
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
@@ -175,14 +165,13 @@ main {
   padding-top: 56px;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   text-decoration: none;
@@ -190,11 +179,11 @@ nav > ul > li > a {
   color: #9ea5dd;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   opacity: 0.7;
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   opacity: 0.9;
 }
 
@@ -218,7 +207,6 @@ nav > ul > li > a:active {
 
 .navtoggle.responsive li {
   display: block;
-  border-bottom: 1px solid #ccc;
   text-align: right;
 }
 
@@ -229,11 +217,12 @@ nav > ul > li > a:active {
 .navtoggle.responsive li {
   display: block;
   padding: 8px 0;
+  border-bottom: 1px solid #ccc;
 }
 
 .navtoggle.responsive li:last-child {
   padding: 0;
-border-bottom: none;
+  border-bottom: none;
 }
 
 footer {
@@ -244,28 +233,28 @@ footer {
   width: 100%;
 }
 
-.social > ul {
+.social>ul {
   list-style-type: none;
   padding: 0;
 }
 
-.social > ul > li {
+.social>ul>li {
   display: inline-block;
 }
 
-.social > ul > li > a {
+.social>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #595a5a;
 }
 
-.social > ul > li > a:hover {
+.social>ul>li>a:hover {
   opacity: 0.7;
   text-decoration: underline;
 }
 
-.social > ul > li > a:active {
+.social>ul>li>a:active {
   opacity: 0.7;
 }
 
@@ -287,7 +276,6 @@ footer {
   font-weight: 300;
   color: #fff;
 }
-
 
 #work .row {
   padding-bottom: 25px;
@@ -319,36 +307,26 @@ footer {
   font-weight: 300;
 }
 
-
 .modal {
   display: none;
-
   /* Hidden by default */
   position: fixed;
-
   /* Stay in place */
   z-index: 1;
-
   /* Sit on top */
   padding-top: 100px;
-
   /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-
   /* Full width */
   height: 100%;
-
   /* Full height */
   overflow: auto;
-
   /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9);
-
   /* Black w/ opacity */
 }
 
@@ -441,14 +419,13 @@ Medium devices (640px and larger)
 
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
   .navtoggle.responsive li {
     padding: 0;
     border-top: none;
-    position: right;
   }
 
   .navtoggle li:not(:last-child) {
@@ -473,22 +450,23 @@ Medium devices (640px and larger)
 
   #hero {
     padding: 20px 50px;
-
   }
 
   #hero h1 {
-      padding-top: 30px;
+    padding-top: 30px;
   }
 
   #hero {
     background-image: url('../img/Me/me-work-1200px.jpg');
-      height: 550px; /* You must set a specified height */
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: cover; /* Resize the background image to cover the entire container */
+    height: 550px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
   }
-
-
 
   #work img {
     padding-top: 0em;
@@ -537,26 +515,24 @@ Large devices (1024px or larger)
     }
 
     #hero {
-
       background-image: url('../img/Me/me-work-1200px.jpg');
-
-        height: 550px; /* You must set a specified height */
-        background-position: center; /* Center the image */
-        background-repeat: no-repeat; /* Do not repeat the image */
-        background-size: cover; /* Resize the background image to cover the entire container */
-
+      height: 550px;
+      /* You must set a specified height */
+      background-position: center;
+      /* Center the image */
+      background-repeat: no-repeat;
+      /* Do not repeat the image */
+      background-size: cover;
+      /* Resize the background image to cover the entire container */
     }
 
     #hero {
       padding: 20px 50px;
-
     }
 
     #hero h1 {
-        padding-top: 30px;
+      padding-top: 30px;
     }
-
-
 
     #about {
       padding: 60px 100px;
@@ -581,13 +557,12 @@ Large devices (1024px or larger)
     }
   }
 
-.copyright{
-  margin: 0;
-padding: 0.6em;
-}
+  .copyright {
+    margin: 0;
+    padding: 0.6em;
+  }
+
   /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-  @media only screen and (min-width: 1440px) {
-
-  }
+  @media only screen and (min-width: 1440px) {}
