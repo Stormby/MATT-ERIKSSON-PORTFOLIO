@@ -245,10 +245,11 @@ footer h2 {
 
 .social>ul>li {
   display: inline-block;
+  text-align: center;
 }
 
 .social>ul>li>a {
-  padding: 0 15px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
   color: #595a5a;
