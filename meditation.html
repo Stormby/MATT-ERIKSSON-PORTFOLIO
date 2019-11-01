@@ -12,76 +12,194 @@
 
 </head>
 
-<body>
-
-  <header>
-    <div class="container">
-      <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html"><img class="logo" src="img/Logo/mattlogo.png" alt="Matt Eriksson"></a>
-        <nav>
-          <ul>
-            <li><a href="index.html">My Projects</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-          </ul>
-        </nav>
-      </div>
+<header>
+  <div class="container">
+    <div class="navtoggle" id="myNavtoggle">
+      <a href="index.html"><img class="logo" src="img/Logo/mattlogo.png" alt="Matt Eriksson"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">My Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
     </div>
-  </header>
 
+  </div>
+</header>
 
-  <main>
-    <div class="container">
-      <div id="leveledge">
-        <h1 class="center">Meditation Coach</h1>
-        <div class="center">
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 141.4214%;"><iframe src="https://www.behance.net/gallery/87084929/Meditation-Coach-Project?iframe=1" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen></iframe></div>
+<main>
+  <div class="container">
+    <div id="leveledge">
+      <h1 class="center">Meditation Coach</h1>
+      <div class="center">
+        <picture>
+          <source srcset="img/meditation/hero-600px.png" media="(max-width:767px)">
+          <img class="myImages" id="myImg" src="img/meditation/hero-1200px.png" alt="Screens from Healing Mind webapp" style="max-width: 700px">
+        </picture>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" alt="Screens from Healing Mind webapp">
+          <div id="caption"></div>
+        </div>
+      </div>
+      <div class="para">
+        <p>Healing Mind is a personal project where I set out to design a destination for a friend and spiritual coach to educate, share and connect with current practitioners and new clients.
+          The webapp was created during a weekend design sprint and aimed to allow her clients to learn about and access meditations as well as book workshops.</p>
+      </div>
+
+      <br>
+
+      <h3 class="center">Discovery</h3>
+      <div class="para">
+        <p>I met with the client to find out what her needs were.</p>
+        <ul>
+          <li>Promote herself and a way for customers to reach her
+          <li>Offer meditations and teachings
+          <li>Ability to book events
+          <li>Easy to use
+        </ul>
+        <p>I started by doing desk research on similar apps and services and developed a user map to reflect the clients’ thoughts. I used this as basis for further discussion. </p>
+
+        <div class="pic1">
+          <picture>
+            <source srcset="img/meditation/apps-600px.png" media="(max-width:767px)">
+            <img class="myImages" id="myImg02" src="img/meditation/apps-1200px.png" alt="Competitive Research">
+          </picture>
+          <div id="myModal02" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img02" alt="Competitive Research">
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <h3 class="center">User flow</h3>
+      <div class="para">
+        <p>To ensure I have a clear direction and accounted for all expected options I mapped out the user's journey in the below user flow.</p>
+        <div class="pic1">
+          <picture>
+            <source srcset="img/meditation/flow-600px.png" media="(max-width:767px)">
+            <img class="myImages" id="myImg02" src="img/meditation/flow-1200px.png" alt="Healing Mind User Flow">
+          </picture>
+          <div id="myModal02" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img02" alt="Healing Mind User Flow">
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <h3 class="center">Wireframing</h3>
+      <div class="para">
+        <p>In addition to speaking with the client I interviewed a group of her practitioners and created a series of low fidelity wireframes based on their feedback. Testing these with the client and users I learned that:</p>
+        <div>
+          <ul>
+            <li>Daily Mindfulness practice would rarely be used and should therefore be removed.</li>
+            <li>As everyone prefer their meditation practice differently I’d need to add ability to personalise playback.</li>
+            <li>Player had redundant options for a meditation app and should be simplified.</li>
+            <li>The ‘Appearances’ consisted of a page per event which was redundant as bookings would be made through Eventbrite anyway.</li>
+          </ul>
         </div>
 
+        <div class="pic1">
+          <picture>
+            <source srcset="img/meditation/loweres-600px.png" media="(max-width:767px)">
+            <img class="myImages" id="myImg03" src="img/meditation/lowres-1200px.png" alt="Low-res wireframes">
+          </picture>
+          <div id="myModal03" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img03" alt="Low-res wireframes">
+            <div id="caption03"></div>
+          </div>
+        </div>
+      </div>
 
-  </main>
+      <br>
 
-  <footer id="contact">
+      <h3 class="center">Design</h3>
+      <div>
+        <div class="para">
+          <p>With new learnings I set about creating high fidelity wireframes. In order to do so I created and decided upon a series of assets including colour palette, logo, images, icons and fonts.</p>
+          <p>I created the client’s logo for a cleaner, clearer and more personal design. It’s made up of 3 parts; illustration, title and signature, which can be used separately if needed.</p>
+        </div>
+        <div class="pic1">
+          <picture>
+            <source srcset="img/meditation/design-600px.png" media="(max-width:767px)">
+            <img class="myImages" id="myImg04" src="img/meditation/design-1200px.png" alt="Design elements for Healing Mind">
+          </picture>
+          <div id="myModal04" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img04" alt="Design elements for Healing Mind">
+            <div id="caption04"></div>
+          </div>
+        </div>
+      </div>
 
-    <div id="box" class="container">
+      <br>
 
-      <h2>Let's talk!</h2>
-      <p>Can I help or do you want to know more?</p>
-      <p>E-mail: <a href="mailto:matteriksson@gmail.com">matteriksson@gmail.com</a>
-        <br>
-        Mobile: <a href="tel:0+44891326450">+44 7891 326 450</a>
-        <br>
-        Skype: <a href="mskype:matteriksson_1">matteriksson_1</a></p>
-      <p>Location: London</p>
+      <h3 class="center">Prototype</h3>
+      <div class="para">
+        <p>I created a high fidelity prototype using Principle. It included screens for sign up, onboarding, meditation player, about page and events page.
+        </p>
+
+        <div class="pic1">
+
+          <video width="640" height="480" controls>
+            <source src="img/meditation/prototype.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+      </div>
     </div>
-    <a href="mailto:matteriksson@gmail.com" class="button contact">Email me</a>
 
-    <div class="social">
-      <ul>
-        <li><a target="_blank" href="https://www.linkedin.com/in/matteriksson">
-            <font size="6"><i class="fab fa-linkedin"></i></font>
-          </a></li>
-        <li><a target="_blank" href="https://www.instagram.com/matt_does_ux">
-            <font size="6"><i class="fab fa-instagram"></i></font>
-          </a></li>
-        <li><a target="_blank" href="https://www.behance.net/matteriksson">
-            <font size="6"><i class="fab fa-behance-square"></i></font>
-          </a></li>
-          <li><a target="_blank" href="https://dribbble.com/MattEriksson">
-              <font size="6"><i class="fab fa-dribbble-square"></i></font>
-            </a></li>
-      </ul>
-    </div>
+</main>
 
-    <div class=copyright>
-      <p>This website was designed and coded by Matt Eriksson</p>
-    </div>
-  </footer>
+<footer id="contact">
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
+  <div id="box" class="container">
+
+    <h2>Let's talk!</h2>
+    <p>Can I help or do you want to know more?</p>
+    <p>E-mail: <a href="mailto:matteriksson@gmail.com">matteriksson@gmail.com</a>
+      <br>
+      Mobile: <a href="tel:0+44891326450">+44 7891 326 450</a>
+      <br>
+      Skype: <a href="mskype:matteriksson_1">matteriksson_1</a></p>
+    <p>Location: London</p>
+  </div>
+  <a href="mailto:matteriksson@gmail.com" class="button contact">Email me</a>
+
+
+  <div class="social">
+    <ul>
+      <li><a target="_blank" href="https://www.linkedin.com/in/matteriksson">
+          <font size="6"><i class="fab fa-linkedin"></i></font>
+        </a></li>
+      <li><a target="_blank" href="https://www.instagram.com/matt_does_ux">
+          <font size="6"><i class="fab fa-instagram"></i></font>
+        </a></li>
+      <li><a target="_blank" href="https://www.behance.net/matteriksson">
+          <font size="6"><i class="fab fa-behance-square"></i></font>
+        </a></li>
+      <li><a target="_blank" href="https://dribbble.com/MattEriksson">
+          <font size="6"><i class="fab fa-dribbble-square"></i></font>
+        </a></li>
+    </ul>
+  </div>
+
+  <div class=copyright>
+    <p>This website was designed and coded by Matt Eriksson</p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
 
 </body>
 
