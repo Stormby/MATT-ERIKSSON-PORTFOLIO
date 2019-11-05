@@ -86,7 +86,7 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #5166ad;
+  background: linear-gradient(to top, #000046, #1cb5e0);
   color: #fff !important;
   /* needed to override the default link color */
   font-weight: 400;
@@ -474,8 +474,8 @@ Medium devices (640px and larger)
   }
 
   #hero {
-    background-image: url('../img/Me/me-work-1200px.jpg');
-    height: 550px;
+    background-image: linear-gradient(to bottom right, #000046, #1CB5E0);
+    height: 280px;
     /* You must set a specified height */
     background-position: center;
     /* Center the image */
