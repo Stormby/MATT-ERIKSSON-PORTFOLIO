@@ -45,11 +45,11 @@ h1 {
 
 h2 {
   font-size: 1.8em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   font-weight: 300;
   margin: 0;
 }
@@ -426,6 +426,7 @@ Medium devices (640px and larger)
     font-size: 16px;
     padding: 0px 0;
   }
+
 
   .logo {
     max-width: 160px;
