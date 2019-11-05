@@ -55,8 +55,8 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5em;
-  font-weight: 400;
+  font-size: 1.25em;
+  font-weight: 200;
 }
 
 p {
@@ -322,7 +322,7 @@ footer h2 {
 
 #hero h1 span {
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -459,6 +459,10 @@ Medium devices (640px and larger)
 
   .navtoggle.responsive nav {
     padding: 0;
+  }
+
+  ul li{
+   font-size:18px;
   }
 
   main {
