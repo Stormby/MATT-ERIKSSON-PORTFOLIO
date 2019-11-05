@@ -92,8 +92,8 @@ a:active {
   background: #100F34;
   color: #fff !important;
   /* needed to override the default link color */
-  font-weight: 400;
-  padding: 0.6em 1.6em;
+  font-weight: 300;
+  padding: 0.4em 1.0em;
   border-radius: 3px;
   /* width of the border, type, color */
   border-bottom: 2px solid #31468f;
