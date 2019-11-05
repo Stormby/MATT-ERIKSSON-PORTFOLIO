@@ -86,7 +86,7 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background: linear-gradient(to top, #000046, #1cb5e0);
+  background: #000046;
   color: #fff !important;
   /* needed to override the default link color */
   font-weight: 400;
@@ -531,17 +531,7 @@ Large devices (1024px or larger)
       width: 50%;
     }
 
-    #hero {
-      background-image: url('../img/Me/me-work-1200px.jpg');
-      height: 550px;
-      /* You must set a specified height */
-      background-position: center;
-      /* Center the image */
-      background-repeat: no-repeat;
-      /* Do not repeat the image */
-      background-size: cover;
-      /* Resize the background image to cover the entire container */
-    }
+
 
     #hero {
       padding: 20px 50px;
