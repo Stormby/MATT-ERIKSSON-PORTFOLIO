@@ -271,10 +271,10 @@ footer h2 {
 /* index.html */
 
 #hero {
-background: linear-gradient(to bottom, #16222a, #3a6073);
+background: linear-gradient(to bottom, #606c88, #3f4c6b);
   padding: 10px 10px;
   width: 100%;
-  border-top-left-radius: 60% 20%;
+  border-bottom-left-radius: 60% 20%;
 border-bottom-right-radius: 50% 30%;
 }
 
