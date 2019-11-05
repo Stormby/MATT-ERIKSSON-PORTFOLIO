@@ -86,7 +86,7 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background: #000046;
+  background: #100F34;
   color: #fff !important;
   /* needed to override the default link color */
   font-weight: 400;
