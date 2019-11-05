@@ -45,7 +45,7 @@ h1 {
 
 h2 {
   font-size: 2.0em;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 h3 {
@@ -266,7 +266,7 @@ footer h2 {
 
 /* index.html */
 #hero {
-  background-color: #447AAB;
+  background-color: #fff
   padding: 10px 0;
   width: 100%;
 }
@@ -275,7 +275,7 @@ footer h2 {
   text-align: center;
   font-size: 30px;
   font-weight: 300;
-  color: #fff;
+  color: #34354E;
 }
 
 #hero h1 p {
@@ -474,7 +474,7 @@ Medium devices (640px and larger)
   }
 
   #hero {
-    background-image: linear-gradient(to bottom right, #000046, #1CB5E0);
+    background: #fff;
     height: 280px;
     /* You must set a specified height */
     background-position: center;
