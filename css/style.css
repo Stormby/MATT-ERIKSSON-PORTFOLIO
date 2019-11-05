@@ -153,7 +153,7 @@ header {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 120px;
   padding-top: 7px;
 }
 
@@ -162,7 +162,7 @@ img {
 }
 
 main {
-  padding-top: 0px;
+  padding-top: 20px;
 }
 
 nav>ul {
@@ -202,7 +202,7 @@ nav>ul>li>a:active {
   top: 2px;
   font-size: 20px;
   padding-right: 0;
-  color: #5166ad;
+  color: #343450;
 }
 
 .navtoggle.responsive li {
@@ -474,7 +474,7 @@ Medium devices (640px and larger)
   }
 
   #hero {
-    background: #fff;
+    background: #D0D1E2;
     height: 280px;
     /* You must set a specified height */
     background-position: center;
