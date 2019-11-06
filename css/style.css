@@ -114,9 +114,9 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #5166ad !important;
+  color: #fff !important;
   text-transform: uppercase;
-  border: 2px solid #34354E;
+  border: 2px solid #fff;
 }
 
 .button.contact:hover {
@@ -230,13 +230,19 @@ nav>ul>li>a:active {
 }
 
 footer {
-  background-color: #ebeeff;
+  background: linear-gradient(to bottom, #606c88, #3f4c6b);
+  color: #fff;
   padding: 0 10px;
   margin: 0;
   text-align: center;
   width: 100%;
+    border-top-left-radius: 60% 20%;
 }
 
+footer a {
+
+  color: #fff;
+}
 footer h2 {
   padding-top: 60px;
   margin: 0;
@@ -256,7 +262,7 @@ footer h2 {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #343450;
+  color: #fff;
 }
 
 .social>ul>li>a:hover {
@@ -274,7 +280,6 @@ footer h2 {
 background: linear-gradient(to bottom, #606c88, #3f4c6b);
   padding: 10px 12px;
   width: 100%;
-  border-bottom-left-radius: 60% 20%;
 border-bottom-right-radius: 50% 30%;
 }
 
