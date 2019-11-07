@@ -89,7 +89,7 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background: #3f4c6b;
+  background: #060809;
   color: #fff !important;
   /* needed to override the default link color */
   font-size: 20px;
@@ -120,7 +120,7 @@ a:active {
 }
 
 .button.contact:hover {
-  background-color: #263770;
+  background-color: #193143;
   color: #fff !important;
 }
 
@@ -230,7 +230,7 @@ nav>ul>li>a:active {
 }
 
 footer {
-  background: linear-gradient(to bottom, #606c88, #3f4c6b);
+  background: linear-gradient(to bottom, #060809, #193143);
   color: #fff;
   padding: 0 10px;
   margin: 0;
@@ -491,7 +491,7 @@ Medium devices (640px and larger)
   }
 
   #hero {
-background: linear-gradient(to bottom, #606c88, #3f4c6b);
+background: linear-gradient(to top, #060809, #193143);
     height: 280px;
     /* You must set a specified height */
     background-position: center;
