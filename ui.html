@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Matt Eriksson - UX/UI Designer</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151746580-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-151746580-1');
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img class="logo" src="img/logo/mattlogo2.png" alt="Matt Eriksson"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">My Projects</a></li>
+            <li  class="current"><a href="ui.html">UI Design</a></li>
+            <li><a href="blog.html">Articles</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container">
+      <div id="leveledge">
+        <h2 class="center">UI DESIGN</h2>
+        <div class="center">
+          <picture>
+            <source srcset="img/ui/designs-600px.jpg" media="(max-width:767px)">
+            <img class="myImages" id="myImg" src="img/ui/designs-1200px.jpg" alt="Range of previous design work." style="max-width: 700px">
+          </picture>
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="Responsive LevelEdge mockup on different devices.">
+            <div id="caption"></div>
+          </div>
+        </div>
+        <div class="para">
+          <p>I have been creating visual elements on many projects - in particular motion graphics but also logos and designs for print. I generally work in the Adobe CC Suite. You can see <b>some of my previous work above</b> and below you'll find
+            recent website and mobile designs.</p>
+        </div>
+      </div>
+    </div>
+
+<div>
+    <h3 class="center">Challenge: Checkout Facility</h3>
+    <br>
+    <div class="pic1">
+      <picture>
+        <source srcset="img/ui/creditcard-600px.jpg" media="(max-width:767px)">
+        <img class="myImages" id="myImg02" src="img/ui/creditcard-1200px.jpg" alt="Credit card checkout.">
+      </picture>
+      <div id="myModal02" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img02" alt="LevelEdge Research">
+      </div>
+    </div>
+    <div class="para">
+      <p>As part of a Daily UI challenge I created a <b>credit card checkout</b> popup for a film festival website. In order for it to be responsive I also created a mobile version I used Sketch and Photoshop for the website and popup.</p>
+    </div>
+</div>
+
+  </main>
+
+
+
+
+  <footer id="contact">
+    <div id="box" class="container">
+      <h2>Get in touch</h2>
+      <p>E-mail: <a href="mailto:matteriksson@gmail.com">matteriksson@gmail.com</a>
+        <br>
+        Mobile: <a href="tel:0+44891326450">+44 (0)7891 326 450</a>
+        <br>
+        Skype: <a href="mskype:matteriksson_1">matteriksson_1</a></p>
+      <p>Location: London</p>
+    </div>
+    <a href="mailto:matteriksson@gmail.com" class="button contact">Email me</a>
+
+
+    <div class="social">
+      <ul>
+        <li><a target="_blank" href="https://www.linkedin.com/in/matteriksson">
+            <font size="6"><i class="fab fa-linkedin"></i></font>
+          </a></li>
+        <li><a target="_blank" href="https://www.instagram.com/matt_does_ux">
+            <font size="6"><i class="fab fa-instagram"></i></font>
+          </a></li>
+        <li><a target="_blank" href="https://www.behance.net/matteriksson">
+            <font size="6"><i class="fab fa-behance-square"></i></font>
+          </a></li>
+        <li><a target="_blank" href="https://dribbble.com/MattEriksson">
+            <font size="6"><i class="fab fa-dribbble-square"></i></font>
+          </a></li>
+      </ul>
+    </div>
+
+    <div class=copyright>
+      <p style="font-size:60%">This website was designed and coded by Matt Eriksson</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

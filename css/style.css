@@ -76,14 +76,14 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #62bbdd;
+  color: #221F6D;
   text-decoration: none;
   /* Underlining when hovering over a link */
 }
 
 a:active {
   /* selected link */
-  color: #62bbdd;
+  color: #100F34;
 }
 
 .button {
@@ -280,7 +280,6 @@ footer h2 {
 background: linear-gradient(to bottom, #606c88, #3f4c6b);
   padding: 10px 12px;
   width: 100%;
-border-bottom-right-radius: 50% 30%;
 }
 
 #hero h1 {
