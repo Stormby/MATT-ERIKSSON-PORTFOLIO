@@ -276,7 +276,7 @@ footer h2 {
 /* index.html */
 
 #hero {
-background: linear-gradient(to bottom, #606c88, #3f4c6b);
+background: linear-gradient(to bottom, #060809, #193143);
   padding: 10px 12px;
   width: 100%;
 }
@@ -489,7 +489,7 @@ Medium devices (640px and larger)
   }
 
   #hero {
-background: linear-gradient(to top, #060809, #193143);
+background: linear-gradient(to bottom, #060809, #193143);
     height: 280px;
     /* You must set a specified height */
     background-position: center;
