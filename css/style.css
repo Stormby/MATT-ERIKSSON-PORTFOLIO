@@ -333,6 +333,10 @@ background: linear-gradient(to bottom, #060809, #193143);
   font-weight: 200;
 }
 
+#line {
+    border-bottom: 1px solid gray;
+}
+
 .modal {
   display: none;
   /* Hidden by default */
