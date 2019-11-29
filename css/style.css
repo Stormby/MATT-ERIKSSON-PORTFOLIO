@@ -229,6 +229,11 @@ nav>ul>li>a:active {
   border-bottom: none;
 }
 
+video {
+ width: 100%;
+ height: auto;
+}
+
 footer {
   background: linear-gradient(to bottom, #060809, #193143);
   color: #fff;
