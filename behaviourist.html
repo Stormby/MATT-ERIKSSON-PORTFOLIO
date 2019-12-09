@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Matt Eriksson - UX/UI Designer</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151746580-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-151746580-1');
+  </script>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img class="logo" src="img/logo/mattlogo2.png" alt="Matt Eriksson"></a>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">My Projects</a></li>
+            <li><a href="ui.html">UI Design</a></li>
+            <li><a href="blog.html">Articles</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div id="leveledge">
+        <h2 class="center">TRACKING BEHAVIOUR & REPORTING DATA</h2>
+        <div class="center">
+          <picture>
+            <source srcset="img/behaviourist/lofi-600px.png" media="(max-width:767px)">
+            <img class="myImages" id="myImg" src="img/behaviourist/lofi-1200px.png" alt="Lo-fi wireframes of the app." style="max-width: 700px">
+          </picture>
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="Lo-fi wireframes of the app.">
+            <div id="caption"></div>
+          </div>
+        </div>
+        <div class="para">
+          <p>I was tasked with creating a product which would support a business in investigating and improving behaviour in canines. The need was for customers to be able to <b>track behaviour</b> on-the-go and during training sessions. The product
+            needed
+            to allow for an <b>intuitive and simple solution</b> for input of both pre-determined and bespoke behaviour tracking. The service aims to encourage <b>off-site training</b>, <b>gauge the success</b> of training methods and be used as a
+            <b>tool in marketing.</b></p>
+        </div>
+
+        <br>
+
+        <h3 class="center">My Role</h3>
+        <div class="para">
+          <p>I worked as sole UX Researcher and UI Designer on the project.</p>
+        </div>
+
+        <br>
+
+        <h3 class="center">Business Objectives & Users</h3>
+        <div class="para">
+
+          <p>After meeting with the business owner, I compiled the business needs along with what would be realistic to achieve considering user needs, time and budget. </p>
+
+          <p>The requirements at the outset were:</p>
+          <div>
+            <ul>
+              <li>Responsive webapp.</li>
+              <li>Behaviour/Activity tracking over time.</li>
+              <li>Instructor be able to access data through charts and graphs.</li>
+              <li>Afforance for adding behaviours.</li>
+              <li>Ability to upload videos.</li>
+              <li>Minimal management/updates required by instructors</li>
+            </ul>
+          </div>
+          <p>At this stage, due to the users' various levels of technical skills, it was also important to emphasise the usefulness of UX and putting the user at the centre of the work to the stakeholder. I compiled a user personas to ensure focus on
+            the user throughout the process.</p>
+          <br>
+
+          <h3 class="center">Research & Interviews</h3>
+          <div class="para">
+            <p>As the purpose of the app was not to train dogs but to track behaviour I conducted a comprehensive investigation into various methods of tracking behaviours and presenting the associated data. Many of the solutions I studied were apps
+              within the healthcare and sports fields. Whereas most offerings served one specific purpose it became apparent that my biggest hurdle would be including a multiple options of behaviours to track. Because of this and ease of use it would
+              be crucial to keep it consistent for easy tracking.</p>
+
+          </div>
+          <div class="pic1">
+            <picture>
+              <source srcset="img/behaviourist/apps-600px.png" media="(max-width:767px)">
+              <img class="myImages" id="myImg06" src="img/behaviourist/apps-1200px.png" alt="Personas">
+            </picture>
+            <div id="myModal06" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img06" alt="Personas">
+              <div id="caption06"></div>
+            </div>
+          </div>
+
+          <p>Reading forums and blogs I discovered, as expected, that easy access on-the-go was a priority when tracking behaviour. Incidents over time was the most common measuring method.</p>
+
+          <p>Furthermore, during interviews with dog owners, I found that many users would prefer a way of adding additional information to their tracked data for context. Gamification was a common aspect to encourage people to keep up with training
+            and entering data.</p>
+
+          <p>While presenting my findings and suggestions it was decided that I should add a few addtional features. They were:
+          </p>
+
+          <div>
+            <ul>
+              <li>Ability to personalise and add tracking methods.</li>
+              <li>App offering rather than Webapp with Android and iOS vailability.</li>
+              <li>Gamification to encourage return visits and data input.</li>
+            </ul>
+          </div>
+
+
+          <br>
+
+          <h3 class="center">Personas & Architecture</h3>
+          <div class="para">
+            <p>With a better understanding of both user and business needs I created a the information architecture and user flows. These formed the framework for further discussions and ensured that I was meeting stakeholder expectations.
+            </p>
+
+          </div>
+
+          <div class="pic1">
+            <picture>
+              <source srcset="img/behaviourist/flow-600px.png" media="(max-width:767px)">
+              <img class="myImages" id="myImg06" src="img/behaviourist/flow-1200px.png" alt="">
+            </picture>
+            <div id="myModal06" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img06" alt="Personas">
+              <div id="caption06"></div>
+            </div>
+          </div>
+
+          <br>
+
+          <h3 class="center">Wireframing & Prototyping</h3>
+          <div class="para">
+            <p>I used Sketch to build lo-fi wireframes which I prototyped in InVision. I focused on the main aspects of the app in order to be able to test key scenarios with users.</p>
+
+            <div class="pic1">
+              <picture>
+                <source srcset="img/behaviourist/prototyping-600px.png" media="(max-width:767px)">
+                <img class="myImages" id="myImg06" src="img/behaviourist/prototyping-1200px.png" alt="Low-fi wireframe">
+              </picture>
+              <div id="myModal06" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img06" alt="Low fi Wireframe">
+                <div id="caption06"></div>
+              </div>
+            </div>
+
+
+            <br>
+
+            <h3 class="center">Testing</h3>
+            <div class="para">
+              <p>Using the lo-fi prototype, I tested the functionality with 5 users using mobile phones. I tested the 3 scenarios which would provide me with enough data to also apply to other functionality of the app. I explored the following
+                scenarios:</p>
+              <div>
+                <ul>
+                  <li>Adding a training session</li>
+                  <li>Conducting a training session</li>
+                  <li>Adding an additional animal</li>
+                </ul>
+              </div>
+              <p>I uncovered a series of necessary improvements I needed to work on before moving forward. Crucial changes were:</p>
+              <div>
+                <ul>
+                  <li>Tutorial</li>
+                  <li>Clearer navigation copy</li>
+                  <li>Simplified dashboard</li>
+                </ul>
+              </div>
+
+              <div class="pic1">
+                <picture>
+                  <source srcset="img/behaviourist/change-600px.png" media="(max-width:767px)">
+                  <img class="myImages" id="myImg06" src="img/behaviourist/change-1200px.png" alt="Low-fi wireframe">
+                </picture>
+                <div id="myModal06" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img06" alt="Low fi Wireframe">
+                  <div id="caption06"></div>
+                </div>
+              </div>
+
+              <div>
+                <p>I also incorporated an additional confirmation to start the timer ahead of a training session. </p>
+              </div>
+
+              <div class="pic1">
+                <picture>
+                  <source srcset="img/behaviourist/timer-600px.png" media="(max-width:767px)">
+                  <img class="myImages" id="myImg06" src="img/behaviourist/timer-1200px.png" alt="Low-fi wireframe">
+                </picture>
+                <div id="myModal06" class="modal">
+                  <span class="close">&times;</span>
+                  <img class="modal-content" id="img06" alt="Low fi Wireframe">
+                  <div id="caption06"></div>
+                </div>
+              </div>
+              <p class="center">You can explore the revised lo-fi prototype <a target="_blank" href="https://invis.io/M4V5KHHFQDS"><b>here</b>.</a></p>
+
+<br>
+
+              <h3 class="center">Final Designs</h3>
+              <div class="para">
+                <p>This project is currently in the high fidelity design phase and will undergo another round of tests. Further iterations and updates are imminent.
+                  <p>
+
+
+              </div>
+
+              <h3 class="center">Main Tools</h3>
+              <div class="para">
+
+                <div>
+                  <ul>
+                    <li>Sketch</li>
+                    <li>InVision</li>
+                    <li>Excel</li>
+                    <li>Usabilityhub</li>
+                    <li>Overflow</li>
+                  </ul>
+                </div>
+
+              </div>
+
+  </main>
+
+  <footer id="contact">
+
+    <div id="box" class="container">
+
+      <h2>Get in touch</h2>
+
+      <p>E-mail: <a href="mailto:matteriksson@gmail.com">matteriksson@gmail.com</a>
+        <br>
+        Mobile: <a href="tel:0+44891326450">+44 7891 326 450</a>
+        <br>
+        Skype: <a href="mskype:matteriksson_1">matteriksson_1</a></p>
+      <p>Location: London</p>
+    </div>
+    <a href="mailto:matteriksson@gmail.com" class="button contact">Email me</a>
+
+    <div class="social">
+      <ul>
+        <li><a target="_blank" href="https://www.linkedin.com/in/matteriksson">
+            <font size="6"><i class="fab fa-linkedin"></i></font>
+          </a></li>
+        <li><a target="_blank" href="https://www.instagram.com/matt_does_ux">
+            <font size="6"><i class="fab fa-instagram"></i></font>
+          </a></li>
+        <li><a target="_blank" href="https://www.behance.net/matteriksson">
+            <font size="6"><i class="fab fa-behance-square"></i></font>
+          </a></li>
+        <li><a target="_blank" href="https://dribbble.com/MattEriksson">
+            <font size="6"><i class="fab fa-dribbble-square"></i></font>
+          </a></li>
+      </ul>
+    </div>
+
+    <div class=copyright>
+      <p style="font-size:60%">This website was designed and coded by Matt Eriksson</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
