@@ -141,6 +141,8 @@ header {
   padding: 0 15px;
 }
 
+
+
 .row {
   margin: 25px 0;
 }
@@ -150,6 +152,8 @@ header {
   clear: both;
   display: table;
 }
+
+
 
 #work .row.last {
   margin-bottom: 0;
@@ -339,7 +343,7 @@ background: linear-gradient(to bottom, #060809, #193143);
 }
 
 #line {
-    border-bottom: 1px solid gray;
+    ;
 }
 
 .modal {
