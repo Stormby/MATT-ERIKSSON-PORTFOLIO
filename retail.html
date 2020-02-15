@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Matt Eriksson - UX/UI Designer</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151746580-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-151746580-1');
+  </script>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html"><img class="logo" src="img/logo/mattlogo2.png" alt="Matt Eriksson"></a>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">My Projects</a></li>
+            <li><a href="ui.html">UI Design</a></li>
+            <li><a href="blog.html">Articles</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div id="leveledge">
+        <h2 class="center">SOLVING THE ONLINE RETAIL EXPEREINCE</h2>
+        <div class="center">
+          <picture>
+            <source srcset="img/reatil/webwork-600px.jpg" media="(max-width:767px)">
+            <img class="myImages" id="myImg" src="img/retail/webwork-1200px.jpg" alt="Conducting research and testing." style="max-width: 700px">
+          </picture>
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" alt="Conducting research and testing.">
+            <div id="caption"></div>
+          </div>
+        </div>
+        <div class="para">
+          <p>I was lucky to recently work as a UX Researcher for a large UK retailer. I was brought in to conduct research and testing in order to find out how the website could be improved from both a usability and brand perspective.</b></p>
+        </div>
+
+        <br>
+
+        <h3 class="center">Defining the Objectives</h3>
+        <div class="para">
+
+          <p>Upon gathering research already conducted by the company and compiling requirements from stakeholders across the marketing, design and development teams, I set out to define the research I needed to undertake. It quickly became clear
+            that previous design decisions across desktop and mobile had not been made based on user needs or with the company's brand values in mind. From my perspective, the website appeared to be a mismatch with the in-store experience.</p>
+          <p>To discover how the website could be improved, I needed to investigate how effective the current UI and layout was. Where did the users encounter barriers? Where did we lose their engagment and what was their general impression of the
+            site?</p>
+          <br>
+
+          <h3 class="center">Moderated Lab Testing</h3>
+          <div class="para">
+            <p>To conduct this research I engaged 6 participants that matched the company’s audience profile. Through moderated lab testing I asked them to complete tasks based on scenarios. These consisted of adding products to their shopping cart,
+              checking out and navigating to particular sections of the site while verbalising their thoughts. The sessions were recorded on video.</p>
+
+            <div class="center">
+              <picture>
+                <source srcset="img/retail/test-600px.png" media="(max-width:767px)">
+                <img class="myImages" id="myImg" src="img/retail/test-1200px.png" alt="Moderated usability testing." style="max-width: 700px">
+              </picture>
+              <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01" alt="Moderated usability testing.">
+                <div id="caption"></div>
+              </div>
+            </div>
+
+            <p>When analysed and findings synthesised, I discovered that:</p>
+
+            <div>
+              <ul>
+                <li>The <b>customer journeys</b> were familiar to the users and most of the tasks were completed successfully.</li>
+                <li>When looking for a particular category, users mainly navigated the site through the <b>left-hand side navigation</b> resulting in CTA’s, promotions and categories largely being ignored.</li>
+                <li>Some participants struggled to effectively define click-areas for some CTA buttons.</li>
+                <li>On the rare occasions when <b>price points</b> were displayed, participants found it useful.</li>
+                <li>When <b>clear imagery</b> was used, it helped capture participants’ interest and assisted in discovering categories.</li>
+              </ul>
+            </div>
+
+            <p>As I presented my main findings to the teams alongside suggested solutions I found that, although open to improving navigation elements, they were less inclined to make other changes. The marketing team were concerned that displaying
+              price points, adding clearer category imagery and assets which better align with customer expectation could harm the perception of the brand. One team member said:</p>
+
+            <p><q><i>I think it looks better the way it is now. I’m afraid we would make it look cheap.</i></q></p>
+
+            <p>Because of these concerns, I suggested conducting unmoderated, remote testing to further validate my findings and clarify the impact of making the proposed changes.</p>
+          </div>
+
+          <br>
+
+          <h3 class="center">Remote Usability Testing</h3>
+          <div class="para">
+            <p>To ensure I had buy-in from all stakeholders, I conducted a workshop to define the next round of testing. We concluded that it was needed to evaluate multiple variations of the homepage and landing pages against each other. Through
+              small changes between a control version and variants we’d be able to understand how each impacted on usability and brand perception. My focus turned to the following key questions:
+            </p>
+            <div>
+              <ul>
+                <li>How does displaying <b>price point</b> impact on brand value?</li>
+                <li>Does clear <b>product imagery</b> improve click-through rates?</li>
+                <li>Will more vibrant/cheerful imagery featuring models representing the customer align better with <b>brand perception</b>?</li>
+              </ul>
+            </div>
+            <p>I set up 18 unmoderated, remote tests on Usabilityhub which included first-click, reaction, attribute and preference tests. Each test incorporated additional survey questions to provide context. I procured 600 participants from the
+              target demographic
+              through an agency. The tests were completed across 3 days.</p>
+          </div>
+
+          <div class="center">
+            <picture>
+              <source srcset="img/retail/usability-600px.png" media="(max-width:767px)">
+              <img class="myImages" id="myImg" src="img/retail/usability-1200px.png" alt="sability test. Not the actual retailer site." style="max-width: 700px">
+            </picture>
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01" alt="Usability test. Not the actual retailer site.">
+              <div id="caption"></div>
+            </div>
+          </div>
+
+          <br>
+
+          <h3 class="center">Findings</h3>
+          <div class="para">
+            <p>I summarised and presented the findings to my stakeholders. Key discoveries were:</p>
+            <div>
+              <ul>
+                <li>The users liked the <b>clean, clear and simple layout</b>. This validated the moderated lab testing.</li>
+                <li>The inclusion of <b>price points</b> not only aligned with brand perception but also increased click-through rate. It spoke directly to the brand’s core pillar of offering good value.</li>
+                <li>First-click tests validated that users used the <b>CTA buttons</b> (rather than imagery or copy) to access categories and there was a clear evidence that making improvements to the layout in this area enhanced discoverability.
+                </li>
+                <li><b>Clearer imagery</b> for category sections clearly helped the user navigate the site while setting appopriate expectations.</li>
+                <li>I was surprise to discover that certain <b>terminology</b> didn’t resonate with the participants. Several terms which generally are associated with brands appealing to a different consumer was perceived as confusing or
+                  patronising.</li>
+              </ul>
+            </div>
+            <div class="pic1">
+              <picture>
+                <source srcset="img/retail/data-600px.png" media="(max-width:767px)">
+                <img class="myImages" id="myImg06" src="img/retail/data-1200px.png" alt="">
+              </picture>
+              <div id="myModal06" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img06" alt="Personas">
+                <div id="caption06"></div>
+              </div>
+            </div>
+
+            <h3 class="center">Conclusion</h3>
+            <div class="para">
+              <p>I relished the opportunity to work on this project as it was clear that my findings would have a clear impact on the way forward for the retailer. Although I was met with some resistance to change I found that running a workshop and
+                including the stakeholders in the process helped getting everyone onboard.</p>
+
+              <p>The website has since gone through a re-design and just been re-launched. It now incorporates improvements to the navigational elements, imagery, price points and copy.</p>
+              <br>
+              <p><i>Please note that I have chosen to exclude or adapt information and imagery in the above study to ensure client confidentiality.</i></p>
+              <div>
+
+
+                <br>
+
+  </main>
+
+  <footer id="contact">
+
+    <div id="box" class="container">
+
+      <h2>Get in touch</h2>
+
+      <p>E-mail: <a href="mailto:matteriksson@gmail.com">matteriksson@gmail.com</a>
+        <br>
+        Mobile: <a href="tel:0+44891326450">+44 7891 326 450</a>
+        <br>
+        Skype: <a href="mskype:matteriksson_1">matteriksson_1</a></p>
+      <p>Location: London</p>
+    </div>
+    <a href="mailto:matteriksson@gmail.com" class="button contact">Email me</a>
+
+    <div class="social">
+      <ul>
+        <li><a target="_blank" href="https://www.linkedin.com/in/matteriksson">
+            <font size="6"><i class="fab fa-linkedin"></i></font>
+          </a></li>
+        <li><a target="_blank" href="https://www.instagram.com/matt_does_ux">
+            <font size="6"><i class="fab fa-instagram"></i></font>
+          </a></li>
+        <li><a target="_blank" href="https://www.behance.net/matteriksson">
+            <font size="6"><i class="fab fa-behance-square"></i></font>
+          </a></li>
+        <li><a target="_blank" href="https://dribbble.com/MattEriksson">
+            <font size="6"><i class="fab fa-dribbble-square"></i></font>
+          </a></li>
+      </ul>
+    </div>
+
+    <div class=copyright>
+      <p style="font-size:60%">This website was designed and coded by Matt Eriksson</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
